@@ -1,39 +1,57 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand img {
+  width: 15rem;
+  margin-right: 2rem;
+  
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.navbar-dark {
+  background-color: #61876e;
+  /*background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);*/
+  margin-bottom: 2rem;
+  min-height: 8rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
 }
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+
+
