@@ -15,16 +15,23 @@ h3,
 }
 
 .navbar-brand img {
-  width: 15rem;
+  height: 100%;
   margin-right: 2rem;
   
 }
 
-.navbar-dark {
-  background-color: #61876e;
-  /*background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);*/
+.navbar-light {
+  background-color: #A6BB8D;
   margin-bottom: 2rem;
   min-height: 8rem;
+  
+}
+.navbar-lihgt a.link {
+  color: #A6BB8D;
+}
+
+#bfcg-title {
+  color: #3C6255;
 }
 
 .page-enter {
@@ -52,6 +59,8 @@ h3,
   border-bottom: 1px ridge;
   min-height: 200px;
 }
+
+
 
 
 
