@@ -6,7 +6,7 @@ h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Pattaya', cursive;
 }
 
 .navbar-brand {
@@ -17,6 +17,7 @@ h3,
 .navbar-brand img {
   height: 100%;
   margin-right: 2rem;
+  max-height: 100%;
   
 }
 
@@ -55,10 +56,19 @@ h3,
 }
 
 .row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
+  padding: 50px;
+  background-color: rgba(234, 231, 177,.1);
+  border-radius: 13px;
   min-height: 200px;
+  
 }
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 
 
 
