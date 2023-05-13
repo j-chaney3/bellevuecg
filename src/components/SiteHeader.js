@@ -38,7 +38,7 @@ const SiteHeader = () => {
 					</NavItem>
 					<NavItem>
 						<NavLink className="nav-link" to="/reserve">
-							<i className="fa fa-registered fa-lg" /> Reserve a Bed
+							<i className="fa fa-leaf fa-lg" /> Reserve a Bed
 						</NavLink>
 					</NavItem>
 					<NavItem>

@@ -7,7 +7,10 @@ h2,
 h3,
 .card-body > .card-title {
   font-family: 'Pattaya', cursive;
+  color: #3C6255;
+
 }
+
 
 .navbar-brand {
   max-width: 4rem;
@@ -35,6 +38,26 @@ h3,
   color: #3C6255;
 }
 
+.row-content {
+  padding: 50px;
+  background-color: rgba(234, 231, 177,.1);
+  border-radius: 13px;
+  min-height: 200px;
+  
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer {
+  padding: 5px;  
+  width: 100%;
+  min-height: 2rem;
+  background-color: rgba(166, 187, 141,.25)
+}
+
 .page-enter {
   opacity: 0;
   transform: translateX(-100%);
@@ -53,19 +76,6 @@ h3,
 .page-exit-active {
   opacity: 0;
   transition: 300ms ease-in;
-}
-
-.row-content {
-  padding: 50px;
-  background-color: rgba(234, 231, 177,.1);
-  border-radius: 13px;
-  min-height: 200px;
-  
-}
-
-a:link {
-  text-decoration: none;
-  font-weight: bold;
 }
 
 

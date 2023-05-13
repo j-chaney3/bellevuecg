@@ -1,22 +1,20 @@
 import { useState } from 'react';
-import {
-	Navbar,
-	NavbarBrand,
-	Collapse,
-	NavbarToggler,
-	Nav,
-	NavItem,
-} from 'reactstrap';
-import {NavLink} from 'react-router-dom';
-
-import bfcgLogo from '../app/assets/img/bellevuecglogo.png';
+import {Row, Col, Container} from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     
     return (
-		<div>
-			Footer.
-		</div>
+		<footer className="site-footer fixed-bottom">
+			<Container>
+				<Row>
+					<Col className='text-left'>
+						<i className='fa fa-phone'> </i> 724-412-1234 &nbsp;
+						<i className='fa fa-envelope'></i>&nbsp; ouremail@oursite.com 
+					</Col>
+				</Row>
+			</Container>
+		</footer>
     )
 }
 
