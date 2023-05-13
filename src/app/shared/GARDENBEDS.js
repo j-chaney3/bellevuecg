@@ -1,3 +1,26 @@
+import gb1 from '../assets/img/gardenbeds/gb1.jpg'
+import gb2 from '../assets/img/gardenbeds/gb1.jpg'
+import gb3 from '../assets/img/gardenbeds/gb1.jpg'
+import gb4 from '../assets/img/gardenbeds/gb1.jpg'
+import gb5 from '../assets/img/gardenbeds/gb1.jpg'
+import gb6 from '../assets/img/gardenbeds/gb1.jpg'
+import gb7 from '../assets/img/gardenbeds/gb1.jpg'
+import gb8 from '../assets/img/gardenbeds/gb1.jpg'
+import gb9 from '../assets/img/gardenbeds/gb1.jpg'
+import gb10 from '../assets/img/gardenbeds/gb1.jpg'
+import gb11 from '../assets/img/gardenbeds/gb1.jpg'
+import gb12 from '../assets/img/gardenbeds/gb1.jpg'
+import gb13 from '../assets/img/gardenbeds/gb1.jpg'
+import gb14 from '../assets/img/gardenbeds/gb1.jpg'
+import gb15 from '../assets/img/gardenbeds/gb1.jpg'
+import gb16 from '../assets/img/gardenbeds/gb1.jpg'
+import gb17 from '../assets/img/gardenbeds/gb1.jpg'
+import gb18 from '../assets/img/gardenbeds/gb1.jpg'
+import gb19 from '../assets/img/gardenbeds/gb1.jpg'
+import gb20 from '../assets/img/gardenbeds/gb1.jpg'
+
+
+
 export const GARDENBEDS = [
 	{
 		id: 1,
@@ -5,6 +28,7 @@ export const GARDENBEDS = [
 		lName: 'Chinta & Pechetti',
 		size: 'tall',
 		available: false,
+		image: gb1,
 	},
 	{
 		id: 2,
@@ -12,6 +36,7 @@ export const GARDENBEDS = [
 		lName: 'Berry',
 		size: 'tall',
 		available: false,
+		image: gb2,
 	},
 	{
 		id: 3,
@@ -19,6 +44,7 @@ export const GARDENBEDS = [
 		lName: 'Jones',
 		size: 'tall',
 		available: false,
+		image: gb3,
 	},
 	{
 		id: 4,
@@ -26,6 +52,7 @@ export const GARDENBEDS = [
 		lName: 'Blystone & Nylec',
 		size: 'tall',
 		available: false,
+		image: gb4,
 	},
 	{
 		id: 5,
@@ -33,6 +60,7 @@ export const GARDENBEDS = [
 		lName: 'Alechina',
 		size: 'full',
 		available: false,
+		image: gb5,
 	},
 	{
 		id: 6,
@@ -40,6 +68,7 @@ export const GARDENBEDS = [
 		lName: 'Hamm',
 		size: 'full',
 		available: false,
+		image: gb6,
 	},
 	{
 		id: 7,
@@ -47,6 +76,7 @@ export const GARDENBEDS = [
 		lName: 'Chernega',
 		size: 'full',
 		available: false,
+		image: gb7,
 	},
 	{
 		id: 8,
@@ -54,6 +84,7 @@ export const GARDENBEDS = [
 		lName: 'Becker',
 		size: 'full',
 		available: false,
+		image: gb8,
 	},
 	{
 		id: 9,
@@ -61,6 +92,7 @@ export const GARDENBEDS = [
 		lName: 'Ott',
 		size: 'full',
 		available: false,
+		image: gb9,
 	},
 	{
 		id: 10,
@@ -68,6 +100,7 @@ export const GARDENBEDS = [
 		lName: 'Cucurae',
 		size: 'full',
 		available: false,
+		image: gb10,
 	},
 	{
 		id: 11,
@@ -75,6 +108,7 @@ export const GARDENBEDS = [
 		lName: 'Nemic',
 		size: 'full',
 		available: false,
+		image: gb11,
 	},
 	{
 		id: 12,
@@ -82,6 +116,7 @@ export const GARDENBEDS = [
 		lName: 'Chaney',
 		size: 'full',
 		available: false,
+		image: gb12,
 	},
 	{
 		id: 13,
@@ -89,6 +124,7 @@ export const GARDENBEDS = [
 		lName: 'DiMaria',
 		size: 'full',
 		available: false,
+		image: gb13,
 	},
 	{
 		id: 14,
@@ -96,6 +132,7 @@ export const GARDENBEDS = [
 		lName: 'Weaver',
 		size: 'full',
 		available: false,
+		image: gb14,
 	},
 	{
 		id: 15,
@@ -103,6 +140,7 @@ export const GARDENBEDS = [
 		lName: 'Chaney',
 		size: 'full',
 		available: false,
+		image: gb15,
 	},
 	{
 		id: 16,
@@ -110,6 +148,7 @@ export const GARDENBEDS = [
 		lName: 'Brown',
 		size: 'full',
 		available: false,
+		image: gb16,
 	},
 	{
 		id: 17,
@@ -117,6 +156,7 @@ export const GARDENBEDS = [
 		lName: 'Lindsey',
 		size: 'full',
 		available: false,
+		image: gb17,
 	},
 	{
 		id: 18,
@@ -124,6 +164,7 @@ export const GARDENBEDS = [
 		lName: 'Heitzenrater',
 		size: 'full',
 		available: false,
+		image: gb18,
 	},
 	{
 		id: 19,
@@ -131,6 +172,7 @@ export const GARDENBEDS = [
 		lName: 'Pale',
 		size: 'full',
 		available: false,
+		image: gb19,
 	},
 	{
 		id: 20,
@@ -138,5 +180,6 @@ export const GARDENBEDS = [
 		lName: 'Yoder',
 		size: 'full',
 		available: false,
+		image: gb20,
 	},
 ];
