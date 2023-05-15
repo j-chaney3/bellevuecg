@@ -40,7 +40,7 @@ h3,
 
 .row-content {
   padding: 50px;
-  background-color: rgba(234, 231, 177,.1);
+  background-color: rgba(234, 231, 177,.2);
   border-radius: 13px;
   min-height: 200px;
   
@@ -52,6 +52,7 @@ a:link {
 }
 
 .site-footer {
+  margin-top: 50px;
   padding: 5px;  
   width: 100%;
   min-height: 2rem;
@@ -76,6 +77,18 @@ a:link {
 .page-exit-active {
   opacity: 0;
   transition: 300ms ease-in;
+}
+
+.bed-info {
+  background-color: rgba(166, 187, 141, .2);
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-family: 'open-sans';
+}
+
+.garden-beds {
+  border-radius: 10px;
 }
 
 
