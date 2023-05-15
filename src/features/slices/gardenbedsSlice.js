@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { GARDENBEDS } from "../../app/shared/GARDENBEDS";
 
+
 const initialState = {
     gardenbedsArray: GARDENBEDS
 };
