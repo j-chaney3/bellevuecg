@@ -42,7 +42,7 @@ h3,
   padding: 50px;
   background-color: rgba(234, 231, 177,.2);
   border-radius: 13px;
-  min-height: 200px;
+  /*min-height: 200px;*/
   
 }
 
@@ -89,6 +89,7 @@ a:link {
 
 .garden-beds {
   border-radius: 10px;
+  max-width: 100%;
 }
 
 

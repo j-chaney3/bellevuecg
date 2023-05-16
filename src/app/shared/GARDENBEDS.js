@@ -1,23 +1,23 @@
 import gb1 from '../assets/img/gardenbeds/gb1.jpg'
-import gb2 from '../assets/img/gardenbeds/gb1.jpg'
-import gb3 from '../assets/img/gardenbeds/gb1.jpg'
-import gb4 from '../assets/img/gardenbeds/gb1.jpg'
-import gb5 from '../assets/img/gardenbeds/gb1.jpg'
-import gb6 from '../assets/img/gardenbeds/gb1.jpg'
-import gb7 from '../assets/img/gardenbeds/gb1.jpg'
-import gb8 from '../assets/img/gardenbeds/gb1.jpg'
-import gb9 from '../assets/img/gardenbeds/gb1.jpg'
-import gb10 from '../assets/img/gardenbeds/gb1.jpg'
-import gb11 from '../assets/img/gardenbeds/gb1.jpg'
-import gb12 from '../assets/img/gardenbeds/gb1.jpg'
-import gb13 from '../assets/img/gardenbeds/gb1.jpg'
-import gb14 from '../assets/img/gardenbeds/gb1.jpg'
-import gb15 from '../assets/img/gardenbeds/gb1.jpg'
-import gb16 from '../assets/img/gardenbeds/gb1.jpg'
-import gb17 from '../assets/img/gardenbeds/gb1.jpg'
-import gb18 from '../assets/img/gardenbeds/gb1.jpg'
-import gb19 from '../assets/img/gardenbeds/gb1.jpg'
-import gb20 from '../assets/img/gardenbeds/gb1.jpg'
+import gb2 from '../assets/img/gardenbeds/gb2.jpg'
+import gb3 from '../assets/img/gardenbeds/gb3.jpg'
+import gb4 from '../assets/img/gardenbeds/gb4.jpg'
+import gb5 from '../assets/img/gardenbeds/gb5.jpg'
+import gb6 from '../assets/img/gardenbeds/gb6.jpg'
+import gb7 from '../assets/img/gardenbeds/gb7.jpg'
+import gb8 from '../assets/img/gardenbeds/gb8.jpg'
+import gb9 from '../assets/img/gardenbeds/gb9.jpg'
+import gb10 from '../assets/img/gardenbeds/gb10.jpg'
+import gb11 from '../assets/img/gardenbeds/gb11.jpg'
+import gb12 from '../assets/img/gardenbeds/gb12.jpg'
+import gb13 from '../assets/img/gardenbeds/gb13.jpg'
+import gb14 from '../assets/img/gardenbeds/gb14.jpg'
+import gb15 from '../assets/img/gardenbeds/gb15.jpg'
+import gb16 from '../assets/img/gardenbeds/gb16.jpg'
+import gb17 from '../assets/img/gardenbeds/gb17.jpg'
+import gb18 from '../assets/img/gardenbeds/gb18.jpg'
+import gb19 from '../assets/img/gardenbeds/gb19.jpg'
+import gb20 from '../assets/img/gardenbeds/gb20.jpg'
 
 
 
@@ -83,7 +83,7 @@ export const GARDENBEDS = [
 		fName: 'George',
 		lName: 'Becker',
 		size: 'full',
-		available: 'No',
+		available: 'Yes',
 		image: gb8,
 	},
 	{
@@ -182,4 +182,5 @@ export const GARDENBEDS = [
 		available: 'No',
 		image: gb20,
 	},
+	
 ];
