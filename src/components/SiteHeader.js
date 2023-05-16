@@ -21,8 +21,9 @@ const SiteHeader = () => {
 					alt="Bellevue Friendship Community Garden Logo"
 					className="float-start"
 				/>
-				<h1 className="mt-4" id='bfcg-title' >Bellevue Friendship Community Garden</h1>
+				<h1 className="mt-4 ml-5" id='bfcg-title' >Bellevue Friendship Community Garden</h1>
 			</NavbarBrand>
+			
 			<NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
 			<Collapse isOpen={menuOpen} navbar>
 				<Nav className="ms-auto" navbar>

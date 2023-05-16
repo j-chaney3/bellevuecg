@@ -26,7 +26,7 @@ const DisplayBeds = () => {
 	const beds = showAvailable ? availableBeds : allBeds;
 
 	//check for at least one bed
-	if (beds.length > 0) {
+	if (beds && beds.length > 0) {
 		return (
 			<Container>
 				<Row>
@@ -34,10 +34,10 @@ const DisplayBeds = () => {
 						<h2>Garden beds</h2>
 					</Col>
 					<Col className="text-center pb-2">
-						<Button onClick={() => setShowAvailable(false)}>
-							Show All{' '}
-						</Button>
-						<Button onClick={() => setShowAvailable(true)}>
+						<Button color='primary' onClick={() => setShowAvailable(false)}>
+							Show All
+						</Button>{' | '}
+						<Button color='success' onClick={() => setShowAvailable(true)}>
 							Show Available
 						</Button>
 					</Col>
@@ -47,7 +47,8 @@ const DisplayBeds = () => {
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
 							<Card>
 								<CardTitle className="pb-2">
-									Name: {bed.fName} {bed.lName[0]}.
+									Name: {bed.fName} {bed.lName[0]}. <br/>
+                                    Bed: {bed.id}
 								</CardTitle>
 								<CardImg
 									width="100%"
@@ -55,7 +56,7 @@ const DisplayBeds = () => {
 									alt={`Garden bed ${bed.id}`}
 								/>
 								<CardImgOverlay>
-									Bed Number: {bed.id}
+									
 								</CardImgOverlay>
 							</Card>
 						</Col>
