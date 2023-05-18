@@ -36,6 +36,7 @@ h3,
 
 #bfcg-title {
   color: #3C6255;
+  font-family: 'Pattaya';
 }
 
 .row-content {
@@ -92,6 +93,9 @@ a:link {
   background-color: #A6BB8D;
 }
 
+.list-unstyled {
+  list-style-type: none;
+}
 
 
 

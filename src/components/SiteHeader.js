@@ -1,29 +1,33 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import {
-    Navbar,
-    NavbarBrand,
-    Collapse,
-    NavbarToggler,
-    Nav, 
-    NavItem
+	Navbar,
+	NavbarBrand,
+	Collapse,
+	NavbarToggler,
+	Nav,
+	NavItem,
 } from 'reactstrap';
-import {NavLink} from 'react-router-dom';
-import bfcgBrand from '../app/assets/img/bfcgbrand.png'
+import { NavLink } from 'react-router-dom';
+import bfcgBrand from '../app/assets/img/bfcgbrand.png';
 
 const SiteHeader = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    
-    return (
-        <Navbar light sticky="top" expand="md">
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	return (
+		<Navbar light sticky="top" expand="md" className="navbar-expand-md">
 			<NavbarBrand href="/" className="ms-5">
 				<img
 					src={bfcgBrand}
 					alt="Bellevue Friendship Community Garden Logo"
 					className="float-start"
 				/>
-				<h1 className="mt-4 ml-5" id='bfcg-title' >Bellevue Friendship Community Garden</h1>
+				<h4 className="mt-4 ml-5" id="bfcg-title">
+					Bellevue Friendship
+					<br />
+					<span className="ms-4">Community Garden</span>
+				</h4>
 			</NavbarBrand>
-			
+
 			<NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
 			<Collapse isOpen={menuOpen} navbar>
 				<Nav className="ms-auto" navbar>
@@ -50,8 +54,7 @@ const SiteHeader = () => {
 				</Nav>
 			</Collapse>
 		</Navbar>
-    );
+	);
 };
 
 export default SiteHeader;
-
