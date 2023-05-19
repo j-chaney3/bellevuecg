@@ -7,6 +7,7 @@ import ReservePage from './pages/ReservePage';
 import MembersPage from './pages/MembersPage';
 import EventsPage from './pages/EventsPage';
 import HomePage from './pages/HomePage';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 				<Route path='reserve' element={<ReservePage/>} />
 				<Route path='members' element={<MembersPage/>} /> 
 				<Route path='/' element={<HomePage/>} />
+				<Route path='chekout' element={<Checkout />} />
 			</Routes>
 			<Footer />
 		</div>

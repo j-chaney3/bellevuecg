@@ -1,12 +1,13 @@
 import { Container } from 'reactstrap';
 import DisplayBeds from '../features/gardenbeds/DisplayBeds';
 
-const ReservePage = (props) => {
+const Checkout = (props) => {
 	return (
 		<Container>
-			<DisplayBeds  />
+			<DisplayBeds bed={props.id}/>
+			
 		</Container>
 	);
 };
 
-export default ReservePage;
+export default Checkout;

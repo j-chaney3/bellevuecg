@@ -17,8 +17,9 @@ import {
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReserveButton } from '../../components/ReserveButton';
+import { BedName } from '../../components/BedName';
 
-const DisplayBeds = () => {
+const DisplayBeds = (props) => {
 	const [showAvailable, setShowAvailable] = useState(false);
 	const allBeds = useSelector(selectAllGardenbeds);
 	const availableBeds = useSelector(selectAvailableBeds);
@@ -53,20 +54,27 @@ const DisplayBeds = () => {
 					{beds.map((bed) => (
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
 							<Card>
-								<CardTitle className="pb-2">
-									<ul>
-										Name: {bed.fName} {bed.lName[0]}. <br />
-										Bed: {bed.id} <br />
-									</ul>
-									<ReserveButton available={bed.available} onClick={''}  />
-								</CardTitle>
-
 								<CardImg top
 									width="100%"
 									src={bed.image}
 									alt={`Garden bed ${bed.id}`}
 								/>
-								<CardImgOverlay></CardImgOverlay>
+								
+								<CardTitle className="pb-2">
+									<ul>
+										
+										<BedName fName ={bed.fName} lName={bed.lName} available={bed.available}/>
+										Bed: {bed.id} - Currently Available: {bed.available}
+									</ul>
+								</CardTitle>
+								<CardImgOverlay>
+									<Link to={`Checkout/${bed.id}`}>
+											<ReserveButton available={bed.available}/>
+									</Link>
+								</CardImgOverlay>
+								
+								
+								
 							</Card>
 						</Col>
 					))}
