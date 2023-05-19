@@ -18,6 +18,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReserveButton } from '../../components/ReserveButton';
 import { BedName } from '../../components/BedName';
+import WaitingListForm from '../../components/WaitingListForm';
 
 
 const DisplayBeds = (props) => {
@@ -93,7 +94,7 @@ const DisplayBeds = (props) => {
 			<Container>
 				<Row className="row-content">
 					<Col sm="12" className="text-center">
-						<h2>Sorry, there are no availbeds right now</h2>
+						<h2>Sorry, there are no available beds right now</h2>
 					</Col>
 					<Col sm="12" className="text-center">
 						<p>
@@ -104,7 +105,9 @@ const DisplayBeds = (props) => {
 					</Col>
 				</Row>
 				<Row className="row-content mt-3">
-					<Col></Col>
+					<Col>
+						<WaitingListForm/>
+					</Col>
 				</Row>
 			</Container>
 		);
