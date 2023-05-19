@@ -15,13 +15,12 @@ import {
 	selectAvailableBeds,
 } from '../slices/gardenbedsSlice';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ReserveButton } from '../../components/ReserveButton';
-import { BedName } from '../../components/BedName';
+//import { Link } from 'react-router-dom';
+import { ReserveButton } from './ReserveButton';
+import { BedName } from './BedName';
 import WaitingListForm from '../../components/WaitingListForm';
 
-
-const DisplayBeds = (props) => {
+const DisplayBeds = () => {
 	const [showAvailable, setShowAvailable] = useState(false);
 	const allBeds = useSelector(selectAllGardenbeds);
 	const availableBeds = useSelector(selectAvailableBeds);
@@ -31,7 +30,7 @@ const DisplayBeds = (props) => {
 	if (beds && beds.length > 0) {
 		return (
 			<Container>
-				<Row>
+				<Row className="row-content mb-3">
 					<Col sm="12" className="text-center">
 						<h2>Garden beds</h2>
 					</Col>
@@ -52,36 +51,32 @@ const DisplayBeds = (props) => {
 					</Col>
 				</Row>
 
-				<Row className="row-content ms-auto">
+				<Row className="row-content ">
 					{beds.map((bed) => (
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
 							<Card>
+								<CardTitle className="mb-0 text-center">
+									Bed: {bed.id} - Currently Available:{' '}
+									{bed.available}
+								</CardTitle>
 								<CardImg
-									top
 									width="100%"
 									src={bed.image}
 									alt={`Garden bed ${bed.id}`}
 								/>
 
-								<CardTitle>
-									<p className="ms-2">
-										Bed: {bed.id} - Currently Available:{' '}
-										{bed.available}
-									</p>
-								</CardTitle>
-								<CardText>
+								<CardText className="text-center">
 									<BedName
 										fName={bed.fName}
 										lName={bed.lName}
 										available={bed.available}
 									/>
 								</CardText>
-								<CardImgOverlay>
-									<Link to={`Checkout/${bed.id}`}>
-										<ReserveButton
-											available={bed.available}
-										/>
-									</Link>
+								<CardImgOverlay className="mt-3">
+									<ReserveButton
+										available={bed.available}
+										id={bed.id}
+									/>
 								</CardImgOverlay>
 							</Card>
 						</Col>
@@ -106,7 +101,7 @@ const DisplayBeds = (props) => {
 				</Row>
 				<Row className="row-content mt-3">
 					<Col>
-						<WaitingListForm/>
+						<WaitingListForm />
 					</Col>
 				</Row>
 			</Container>

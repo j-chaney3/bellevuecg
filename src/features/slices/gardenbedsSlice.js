@@ -9,7 +9,8 @@ const initialState = {
 const gardenbedSlice = createSlice({
     name: 'gardenbeds',
     initialState
-})
+    
+});
 
 export const gardenbedsReducer = gardenbedSlice.reducer;
 
@@ -20,3 +21,6 @@ export const selectAllGardenbeds = (state) => {
 export const selectAvailableBeds = (state) => {
     return state.gardenbeds.gardenbedsArray.filter((bed) => bed.available === 'Yes')
 }
+
+//
+

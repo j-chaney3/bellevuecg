@@ -7,16 +7,16 @@ export const BedName = (props) => {
 	if (props.available === 'Yes') {
 		return (
 			
-				<div>
+				<>
                     Name: Unoccupied 
-                </div>
+                </>
 			
 		)
 	} if(props.available === 'No') {
         return (
-            <div className='ms-2'>
+            <>
                 Name: {props.fName} {props.lName[0]}
-            </div>
+            </>
         )
     }
 };
