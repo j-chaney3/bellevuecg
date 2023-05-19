@@ -22,6 +22,7 @@ import gb20 from '../assets/img/gardenbeds/gb20.jpg'
 
 
 export const GARDENBEDS = [
+	/*
 	{
 		id: 1,
 		fName: 'Sridevi & Srinivasa',
@@ -182,5 +183,6 @@ export const GARDENBEDS = [
 		available: 'No',
 		image: gb20,
 	},
+	*/
 	
 ];

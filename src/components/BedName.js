@@ -8,14 +8,13 @@ export const BedName = (props) => {
 		return (
 			
 				<div>
-                    Name: 
+                    Name: Unoccupied 
                 </div>
 			
 		)
 	} if(props.available === 'No') {
         return (
-            <div>
-                
+            <div className='ms-2'>
                 Name: {props.fName} {props.lName[0]}
             </div>
         )

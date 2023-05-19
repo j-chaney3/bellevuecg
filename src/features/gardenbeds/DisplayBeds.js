@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom';
 import { ReserveButton } from '../../components/ReserveButton';
 import { BedName } from '../../components/BedName';
 
+
 const DisplayBeds = (props) => {
 	const [showAvailable, setShowAvailable] = useState(false);
 	const allBeds = useSelector(selectAllGardenbeds);
@@ -54,27 +55,33 @@ const DisplayBeds = (props) => {
 					{beds.map((bed) => (
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
 							<Card>
-								<CardImg top
+								<CardImg
+									top
 									width="100%"
 									src={bed.image}
 									alt={`Garden bed ${bed.id}`}
 								/>
-								
-								<CardTitle className="pb-2">
-									<ul>
-										
-										<BedName fName ={bed.fName} lName={bed.lName} available={bed.available}/>
-										Bed: {bed.id} - Currently Available: {bed.available}
-									</ul>
+
+								<CardTitle>
+									<p className="ms-2">
+										Bed: {bed.id} - Currently Available:{' '}
+										{bed.available}
+									</p>
 								</CardTitle>
+								<CardText>
+									<BedName
+										fName={bed.fName}
+										lName={bed.lName}
+										available={bed.available}
+									/>
+								</CardText>
 								<CardImgOverlay>
 									<Link to={`Checkout/${bed.id}`}>
-											<ReserveButton available={bed.available}/>
+										<ReserveButton
+											available={bed.available}
+										/>
 									</Link>
 								</CardImgOverlay>
-								
-								
-								
 							</Card>
 						</Col>
 					))}
@@ -82,7 +89,25 @@ const DisplayBeds = (props) => {
 			</Container>
 		);
 	} else {
-		return <div>no beds to display.</div>;
+		return (
+			<Container>
+				<Row className="row-content">
+					<Col sm="12" className="text-center">
+						<h2>Sorry, there are no availbeds right now</h2>
+					</Col>
+					<Col sm="12" className="text-center">
+						<p>
+							If you'd like to join a waiting list to be notified
+							when a bed becomes available, please fill out the
+							form below.
+						</p>
+					</Col>
+				</Row>
+				<Row className="row-content mt-3">
+					<Col></Col>
+				</Row>
+			</Container>
+		);
 	}
 };
 export default DisplayBeds;

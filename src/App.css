@@ -40,7 +40,8 @@ h3,
 }
 
 .row-content {
-  padding: 50px;
+  
+  padding: 25px;
   background-color: rgba(234, 231, 177,.2);
   border-radius: 13px;
   /*min-height: 200px;*/
