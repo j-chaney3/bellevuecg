@@ -22,5 +22,10 @@ export const selectAvailableBeds = (state) => {
     return state.gardenbeds.gardenbedsArray.filter((bed) => bed.available === 'Yes')
 }
 
-//
+/*
+export const selectBedById = (state) => {
+    return state.gardenbeds.gardenbedsArray.find((state.id))
+}
+*/
+
 

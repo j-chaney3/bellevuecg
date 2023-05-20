@@ -1,8 +1,11 @@
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { useState } from 'react';
+//import { selectBedById } from '../slices/gardenbedsSlice';
+
 
 export const ReserveButton = (props) => {
 	const [reserveModalOpen, setReserveModalOpen] = useState(false);
+	
 
 	if (props.available === 'Yes') {
 		return (
@@ -24,6 +27,7 @@ export const ReserveButton = (props) => {
 							color="success"
 							onClick={() => {
 								setReserveModalOpen(false);
+								
 							}}
 						>
 							Pay

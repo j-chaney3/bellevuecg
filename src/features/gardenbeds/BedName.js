@@ -8,14 +8,14 @@ export const BedName = (props) => {
 		return (
 			
 				<>
-                    Name: Unoccupied 
+                    Gardener:  
                 </>
 			
 		)
 	} if(props.available === 'No') {
         return (
             <>
-                Name: {props.fName} {props.lName[0]}
+                Gardener: {props.fName} {props.lName[0]}.
             </>
         )
     }
