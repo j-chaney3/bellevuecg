@@ -20,7 +20,7 @@ import { ReserveButton } from './ReserveButton';
 import { BedName } from './BedName';
 import WaitingListForm from '../../components/WaitingListForm';
 
-const DisplayBeds = () => {
+const DisplayBeds = (props) => {
 	const [showAvailable, setShowAvailable] = useState(false);
 	const allBeds = useSelector(selectAllGardenbeds);
 	const availableBeds = useSelector(selectAvailableBeds);
@@ -54,10 +54,11 @@ const DisplayBeds = () => {
 				<Row className="row-content ">
 					{beds.map((bed) => (
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
-							<Card>
+							<Card className='shadow'>
 								<CardTitle className="mb-0 text-center">
-									Bed: {bed.id} - Currently Available:{' '}
-									{bed.available}
+									Bed: {bed.id} - 
+									{bed.available ? ' Available' : ' Not available'}
+									
 								</CardTitle>
 								<CardImg
 									width="100%"

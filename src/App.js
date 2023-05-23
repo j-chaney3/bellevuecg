@@ -21,7 +21,7 @@ function App() {
 				<Route path='reserve' element={<ReservePage/>} />
 				<Route path='members' element={<MembersPage/>} /> 
 				<Route path='/' element={<HomePage/>} />
-				<Route path='chekout' element={<Checkout />} />
+				<Route path='chekout:' element={<Checkout />} />
 			</Routes>
 			<Footer />
 		</div>

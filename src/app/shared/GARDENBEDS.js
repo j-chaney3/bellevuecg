@@ -27,7 +27,7 @@ export const GARDENBEDS = [
 		fName: 'Sridevi & Srinivasa',
 		lName: 'Chinta & Pechetti',
 		size: 'tall',
-		available: 'No',
+		available: false,
 		image: gb1,
 	},
 	{
@@ -35,7 +35,7 @@ export const GARDENBEDS = [
 		fName: 'Maxine',
 		lName: 'Berry',
 		size: 'tall',
-		available: 'No',
+		available: false,
 		image: gb2,
 	},
 	{
@@ -43,7 +43,7 @@ export const GARDENBEDS = [
 		fName: 'Charlotte',
 		lName: 'Jones',
 		size: 'tall',
-		available: 'No',
+		available: false,
 		image: gb3,
 	},
 	{
@@ -51,7 +51,7 @@ export const GARDENBEDS = [
 		fName: 'Kelsey & Tommy',
 		lName: 'Blystone & Nylec',
 		size: 'tall',
-		available: 'No',
+		available: false,
 		image: gb4,
 	},
 	{
@@ -59,7 +59,7 @@ export const GARDENBEDS = [
 		fName: 'Lidia',
 		lName: 'Alechina',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb5,
 	},
 	{
@@ -67,7 +67,7 @@ export const GARDENBEDS = [
 		fName: 'Jim',
 		lName: 'Hamm',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb6,
 	},
 	{
@@ -75,15 +75,15 @@ export const GARDENBEDS = [
 		fName: 'Danielle',
 		lName: 'Chernega',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb7,
 	},
 	{
 		id: 8,
-		fName: 'George',
-		lName: 'Becker',
+		fName: '', 
+		lName: '',
 		size: 'full',
-		available: 'Yes',
+		available: true,
 		image: gb8,
 	},
 	{
@@ -91,7 +91,7 @@ export const GARDENBEDS = [
 		fName: 'John',
 		lName: 'Ott',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb9,
 	},
 	{
@@ -99,7 +99,7 @@ export const GARDENBEDS = [
 		fName: 'Florin',
 		lName: 'Cucurae',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb10,
 	},
 	{
@@ -107,7 +107,7 @@ export const GARDENBEDS = [
 		fName: 'David',
 		lName: 'Nemic',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb11,
 	},
 	{
@@ -115,7 +115,7 @@ export const GARDENBEDS = [
 		fName: 'Leann',
 		lName: 'Chaney',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb12,
 	},
 	{
@@ -123,7 +123,7 @@ export const GARDENBEDS = [
 		fName: 'Radar',
 		lName: 'DiMaria',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb13,
 	},
 	{
@@ -131,7 +131,7 @@ export const GARDENBEDS = [
 		fName: 'Mike',
 		lName: 'Weaver',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb14,
 	},
 	{
@@ -139,7 +139,7 @@ export const GARDENBEDS = [
 		fName: 'James',
 		lName: 'Chaney',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb15,
 	},
 	{
@@ -147,7 +147,7 @@ export const GARDENBEDS = [
 		fName: 'Laura',
 		lName: 'Brown',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb16,
 	},
 	{
@@ -155,7 +155,7 @@ export const GARDENBEDS = [
 		fName: 'Kurt',
 		lName: 'Lindsey',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb17,
 	},
 	{
@@ -163,7 +163,7 @@ export const GARDENBEDS = [
 		fName: 'Allysa',
 		lName: 'Heitzenrater',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb18,
 	},
 	{
@@ -171,7 +171,7 @@ export const GARDENBEDS = [
 		fName: 'Brittany',
 		lName: 'Pale',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb19,
 	},
 	{
@@ -179,7 +179,7 @@ export const GARDENBEDS = [
 		fName: 'Cristin',
 		lName: 'Yoder',
 		size: 'full',
-		available: 'No',
+		available: false,
 		image: gb20,
 	},
 	

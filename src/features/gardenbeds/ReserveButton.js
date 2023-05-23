@@ -1,15 +1,17 @@
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { useState } from 'react';
 //import { selectBedById } from '../slices/gardenbedsSlice';
+import { Link } from 'react-router-dom';
 
 
 export const ReserveButton = (props) => {
 	const [reserveModalOpen, setReserveModalOpen] = useState(false);
 	
 
-	if (props.available === 'Yes') {
+	if (props.available === true) {
 		return (
 			<>
+				
 				<Button
 					color="primary"
 					size="sm"

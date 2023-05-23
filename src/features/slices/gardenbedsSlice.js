@@ -19,7 +19,7 @@ export const selectAllGardenbeds = (state) => {
 }
 
 export const selectAvailableBeds = (state) => {
-    return state.gardenbeds.gardenbedsArray.filter((bed) => bed.available === 'Yes')
+    return state.gardenbeds.gardenbedsArray.filter((bed) => bed.available === true)
 }
 
 /*
