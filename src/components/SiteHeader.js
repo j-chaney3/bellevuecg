@@ -48,7 +48,7 @@ const SiteHeader = () => {
 					</NavItem>
 					<NavItem>
 						<NavLink className="nav-link" to="/members">
-							<i className="fa fa-user fa-lg" /> Members
+							<i className="fa fa-user fa-lg" /> Login
 						</NavLink>
 					</NavItem>
 				</Nav>

@@ -15,7 +15,7 @@ import {
 	selectAvailableBeds,
 } from '../slices/gardenbedsSlice';
 import { useState } from 'react';
-//import { Link } from 'react-router-dom';
+
 import { ReserveButton } from './ReserveButton';
 import { BedName } from './BedName';
 import WaitingListForm from '../../components/WaitingListForm';
@@ -54,7 +54,7 @@ const DisplayBeds = (props) => {
 				<Row className="row-content ">
 					{beds.map((bed) => (
 						<Col xs="12" md="6" className="mb-3" key={bed.id}>
-							<Card className='shadow'>
+							<Card className='shadow border-radius 10px'>
 								<CardTitle className="mb-0 text-center">
 									Bed: {bed.id} - 
 									{bed.available ? ' Available' : ' Not available'}

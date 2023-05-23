@@ -1,7 +1,6 @@
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { useState } from 'react';
-//import { selectBedById } from '../slices/gardenbedsSlice';
-import { Link } from 'react-router-dom';
+
 
 
 export const ReserveButton = (props) => {

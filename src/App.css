@@ -89,6 +89,9 @@ a:link {
   font-family: 'open-sans';
 }
 
+.card-style {
+  border-radius: 10px;
+}
 
 .card-title {
   background-color: #A6BB8D;

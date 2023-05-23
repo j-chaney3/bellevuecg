@@ -10,7 +10,9 @@ import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 
 
-function App() {
+const App =() => {
+	
+
 
 	return (
         
