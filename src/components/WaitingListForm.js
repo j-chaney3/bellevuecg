@@ -4,7 +4,7 @@ import { validateWaitingListForm } from '../utils/validateWaitingListForm';
 
 const WaitingListForm = () => {
 	const handleSubmit = (values, { resetForm }) => {
-		console.log('form values', values);
+		
 		resetForm();
 	};
 
